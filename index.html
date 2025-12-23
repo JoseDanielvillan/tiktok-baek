@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Texto SVG Animado</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      background-color: #FFFFFF; /* cambia a transparent si lo quieres sin fondo */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      font-family: "Ropa Sans", sans-serif;
+    }
+
+    svg text {
+      animation: stroke 5s infinite alternate;
+      stroke-width: 2;
+      stroke: #365FA0;
+      font-size: 100px;
+      fill: rgba(72,138,204,0);
+    }
+
+    @keyframes stroke {
+      0% {
+        fill: rgba(72,138,204,0);
+        stroke: rgba(54,95,160,1);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+      }
+      70% {
+        fill: rgba(72,138,204,0);
+        stroke: rgba(54,95,160,1);
+      }
+      80% {
+        fill: rgba(72,138,204,0);
+        stroke: rgba(54,95,160,1);
+        stroke-width: 3;
+      }
+      100% {
+        fill: rgba(72,138,204,1);
+        stroke: rgba(54,95,160,0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <svg viewBox="0 0 800 200" preserveAspectRatio="xMidYMid meet">
+      <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+        Baekq
+      </text>
+    </svg>
+  </div>
+</body>
+</html>
