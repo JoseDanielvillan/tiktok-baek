@@ -12,13 +12,13 @@
       margin: 0;
       width: 100%;
       height: 100%;
-      background: transparent; /* 🔥 fondo transparente */
+      background: transparent;
     }
 
     .wrapper {
       width: 100%;
       height: 100%;
-      background: transparent; /* 🔥 fondo transparente */
+      background: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -28,37 +28,41 @@
       width: 100%;
       height: 100%;
       font-family: "Ropa Sans", sans-serif;
-      background: transparent; /* 🔥 extra seguridad */
     }
 
     svg text {
       animation: stroke 5s infinite alternate;
-      stroke-width: 2;
-      stroke: #365FA0;
-      font-size: 100px;
-      fill: rgba(72,138,204,0);
+      stroke-width: 3;
+
+      /* 🔵 AZUL MÁS CLARO */
+      stroke: #6EC6FF;
+
+      /* 🔥 LETRAS MUCHO MÁS GRANDES */
+      font-size: 180px;
+
+      fill: rgba(110,198,255,0);
     }
 
     @keyframes stroke {
       0% {
-        fill: rgba(72,138,204,0);
-        stroke: rgba(54,95,160,1);
+        fill: rgba(110,198,255,0);
+        stroke: rgba(110,198,255,1);
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
-        stroke-width: 2;
-      }
-      70% {
-        fill: rgba(72,138,204,0);
-        stroke: rgba(54,95,160,1);
-      }
-      80% {
-        fill: rgba(72,138,204,0);
-        stroke: rgba(54,95,160,1);
         stroke-width: 3;
       }
+      70% {
+        fill: rgba(110,198,255,0);
+        stroke: rgba(110,198,255,1);
+      }
+      80% {
+        fill: rgba(110,198,255,0);
+        stroke: rgba(110,198,255,1);
+        stroke-width: 4;
+      }
       100% {
-        fill: rgba(72,138,204,1);
-        stroke: rgba(54,95,160,0);
+        fill: rgba(110,198,255,1);
+        stroke: rgba(110,198,255,0);
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
         stroke-width: 0;
@@ -69,7 +73,7 @@
 
 <body>
   <div class="wrapper">
-    <svg viewBox="0 0 800 200" preserveAspectRatio="xMidYMid meet">
+    <svg viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid meet">
       <text x="50%" y="50%" dy=".35em" text-anchor="middle">
         Baekq
       </text>
